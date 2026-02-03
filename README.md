@@ -1,2 +1,2 @@
-# react_proj1
-Primeiro projeto para aprender react
+# projeto_portfolio
+Primeiro projeto voltado para o aprendizado de frontend
