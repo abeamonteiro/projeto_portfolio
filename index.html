@@ -41,7 +41,7 @@
      <!-- Seção principal da página (main) -->
       <main>
         <!-- Seção de boas vindas -->
-        <selection id="hero" class="selection-container hero-container">
+        <selection id="hero" class="section-container hero-container">
             <!-- BOAS VINDAS -->
             <article class="hero-content">
                 <span> Olá, eu sou Ana Beatriz Monteiro</span>
@@ -64,19 +64,135 @@
         </selection>
 
         <!-- Seção sobre a autora-->
-         <selection id="projects">
+         <selection id="about" class="section-container about-container">
 
-         </selection>
+            <figure class="about-image">
+                <img src="./assets/img/avatar_dev_woman.svg" alt="Foto do Perfil">
+            </figure>
+        
+        <article class="about-content">
+            <h2>Sobre mim</h2>
+        <p>
+            Olá! Sou Ana Beatriz Monteiro, tenho 32 anos, sou de Recife-PE. Profissional em transição do Serviço Social para a Tecnologia, 
+            com foco em Desenvolvimento de Software. Graduada em Serviço Social (UFPE) e cursando Licenciatura em Computação (UFRPE), 
+            complemento a formação com bootcamps intensivos. Minha trajetória anterior, fundamentada na ética, análise social e gestão de 
+            casos complexos, me dotou de competências valiosas como comunicação estratégica, resolução de problemas sob pressão, trabalho em equipe 
+            multidisciplinar e forte capacidade de aprendizado. Busco minha primeira oportunidade como Desenvolvedora Júnior para aliar rigor técnico
+            e visão sistêmica na criação de soluções digitais eficazes.
+        </p>
+
+        <div class="about-buttons-data">
+            <div class=""buttons-container">
+                <a href="#" target="_blank" class="botao">GitHub</a>
+                <a href="#" target="_blank" class="botao-outline">Currículo</a>
+            </div>
+        
+            <div class="data-container">
+                <div class="data-item">
+                    <span class="data-number">100</span>
+                    <span class="data-label">Seguidores</span>
+                </div>  
+                
+                <div class="data-item">
+                    <span class="data-number">10</span>
+                    <span class="data-label">Repositórios</span>
+                </div>
+             </div>    
+        </div>
+    </article>
+
+ </selection>
+        <!--Seção sobre projetos da autora -->
+        <section id="projects" class="section-container projects-container">
+            <h2>Meus Projetos</h2>
+            <!-- Swiper Container -->
+             <div class="swiper projects-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <article class="project-card">
+                            <figure class="project-image">
+                                <img src="./assets/icons/languages/github.svg"
+                                    alt="Ícone GitHub">
+                            </figure>
+
+                            <div class="project-content">
+                                <h3>Projeto GitHub</h3>
+                                <p>Projeto Desenvolvido no GitHub</p>
+
+                                <div class="project-tags">
+                                    <span class="tag">GitHub</span>
+                                </div>
+
+                                <div class="project buttons">
+                                    <a href="#" target="_blank" class="botao-outline botao-sm">
+                                        Deploy
+                                    </a> 
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Botões de Navegação -->
+                 <div class="swiper-button-next"></div>
+                 <div class="swiper-button-prev"></div>
+
+                 <!-- Paginação -->
+                  <div class="swiper-pagination"></div>
+             </div>
+        </section>
 
          <!-- Seção formulário de contato e redes sociais -->
-          <selection id="contact">
+          <selection id="contact" class="section-container contact-container">
 
+                <!-- REDES SOCIAIS -->
+                 <article class="contact-info">
+                    <h2>Entre em contato!</h2>
+                    <p>Sinta-se à vontade para entrar em contato comigo!</p>
+
+                    <div class="social-container">
+                        <a href="#" target="_blank" class="social-icon" aria-lable="Linkedin">
+                            <img src="./assets/icons/social/linkedin.svg" alt="Link para o Linkedin">
+                        </a>
+                        <a href="#" target="_blank" class="social-icon" aria-lable="GitHub">
+                            <img src="./assets/icons/social/github.svg" alt="Link para o GitHub">
+                        </a>
+                        <a href="#" target="_blank" class="social-icon" aria-lable="Instagram">
+                            <img src="./assets/icons/social/instagram.svg" alt="Link para o Instagram">
+                        </a>
+                    </div>
+                 </article>
+
+                 <!-- FORMULÁRIO -->
+                  <form id="formulario">
+
+                    <lable for="nome">Nome</lable>
+                    <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo: ">
+                    <span id="erro-nome"></span>
+
+                    <lable for="email">E-mail</lable>
+                    <input id="email" name="email" type="text" placeholder="Digite seu e-mail: ">
+                    <span id="erro-email"></span>
+
+                    <lable for="assunto">Assunto</lable>
+                    <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem: ">
+                    <span id="erro-assunto"></span>
+
+                    <lable for="mensagem">Mensagem</lable>
+                    <input id="mensagem" name="mensagem" type="text" placeholder="Digite a sua mensagem aqui: ">
+                    <span id="erro-mensagem"></span>
+
+                    <button class="botao" type="submit">Enviar Mensagem></button>
+                  </form>
           </selection>
+
       </main>
 
       <!-- Rodapé (footer)-->
        <footer>
-
+            Desenvolvido por Ana Beatriz Monteiro - 2026
        </footer>
 </body>   
 </html>
